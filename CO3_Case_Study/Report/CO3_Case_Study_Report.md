@@ -20,10 +20,10 @@
 
 ---
 
-**Student Name:** ______________________  
-**Registration Number:** ______________________  
+**Student Name:** M.VIDYADHAR  
+**Registration Number:** 192511467  
 **Signature:** ______________________  
-**Date:** ______________________  
+**Date:** 15-11-2026  
 
 ---
 
@@ -1055,9 +1055,9 @@ I hereby declare that:
 
 ---
 
-**Student Name:** ______________________
+**Student Name:** M.VIDYADHAR
 
-**Registration Number:** ______________________
+**Registration Number:** 192511467
 
 **Course:** Design and Analysis of Algorithms (CSA0607)
 
@@ -1065,7 +1065,7 @@ I hereby declare that:
 
 **Signature:** ______________________
 
-**Date:** ______________________
+**Date:** 15-11-2026
 
 ---
 
@@ -1075,3 +1075,4 @@ I hereby declare that:
 ---
 
 > **End of Assignment**
+
