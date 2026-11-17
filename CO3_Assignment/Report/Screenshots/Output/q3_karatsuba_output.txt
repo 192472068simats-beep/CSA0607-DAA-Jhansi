@@ -1,0 +1,4 @@
+Multiplying two 16-digit integers:
+Result = 12193263113702171333485751812224
+Standard Mult Operations: 256
+Karatsuba Recursive Multiplications: 117

@@ -1,0 +1,2 @@
+Closest Pair Brute Force: dist = 1.4142, pairs = ((2, 3), (3, 4)), Dist Calcs = 45
+Closest Pair D&C: dist = 1.4142, pairs = ((2, 3), (3, 4)), Dist Calcs = 12

@@ -1,0 +1,1 @@
+Max Subarray D&C: Sum = 6, Subarray = [4, -1, 2, 1], Operations = 38
