@@ -1,8 +1,82 @@
-# CSA06 — DESIGN AND ANALYSIS OF ALGORITHMS
-## Assignment 4A – CO4: Algorithmic Design Through Pseudocode
-**Course Outcome:** CO4 – Solve optimization problems using Dynamic Programming and Greedy strategies  
+# COMPREHENSIVE TECHNICAL ASSIGNMENT REPORT
+## CSA06 — Design and Analysis of Algorithms (DAA)
+### Course Outcome 4 (CO4): Algorithmic Design Through Pseudocode (Part I)
+
+---
+
+<div align="center">
+
+# SIMATS ENGINEERING
+### DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+
+---
+
+**Course Code & Title:** CSA0606 — Design and Analysis of Algorithms  
+**Assessment:** Assignment 4A — Course Outcome 4 (CO4 - Part I)  
+**Maximum Marks:** 50  
+**Mode:** Individual Technical Assignment  
 **Student Name:** Mallapu Vidyadhar  
 **Registration Number:** 192511467  
+**Academic Year:** 2024–2025 (Third Year / B.E. CSE)  
+**Standard Followed:** SIMATS Engineering — Handbook for Algorithmic Pseudocode  
+**Source Document:** [Original Assessment Guidelines](Report/Reference/MALLAPU%20VIDYADHAR%20-%20CO4A%20ASSIGNMENT.pdf)
+
+</div>
+
+---
+
+## TABLE OF CONTENTS
+
+1. [Executive Summary](#1-executive-summary)
+2. [Problem Statement & Algorithmic Progression](#2-problem-statement--algorithmic-progression)
+3. [SIMATS Engineering Pseudocode Standards](#3-simats-engineering-pseudocode-standards)
+4. [Complete Task Solutions & Forensic Analyses](#4-complete-task-solutions--forensic-analyses)
+   - [Task 1 – Algorithm Design Review: Diagnose & Repair Informal Pseudocode](#task-1--algorithm-design-review-diagnose-and-repair-poor-pseudocode-6-marks)
+   - [Task 2 – From Business Requirement to Greedy Pseudocode: Job Sequencing with Deadlines](#task-2--from-business-requirement-to-greedy-pseudocode-job-sequencing-with-deadlines-8-marks)
+   - [Task 3 – From Recurrence to Executable Logic: 0/1 Knapsack Dynamic Programming](#task-3--from-recurrence-to-executable-logic-01-knapsack-9-marks)
+   - [Task 4 – Pseudocode Forensics: Defect Isolation & WordBreak Repair](#task-4--pseudocode-forensics-find-explain-and-repair-an-algorithmic-defect-7-marks)
+   - [Task 5 – Same Graph, Different Algorithmic Reasoning: Dijkstra, Bellman-Ford, and Floyd](#task-5--same-graph-different-algorithmic-reasoning-7-marks)
+   - [Task 6 – Day-4 Design Challenge: Energy-Aware Job Scheduling in Cloud Data Centres](#task-6--design-challenge-energy-aware-job-scheduling-in-a-cloud-data-centre-13-marks)
+5. [Comparative Analysis of Greedy vs Dynamic Programming](#5-comparative-analysis-of-greedy-vs-dynamic-programming)
+6. [Adversarial Testing & Boundary Verification](#6-adversarial-testing--boundary-verification)
+7. [Conclusion & Technical Reflection](#7-conclusion--technical-reflection)
+8. [References](#8-references)
+
+---
+
+## 1. Executive Summary
+
+This report establishes complete algorithmic designs for optimization problems under the curriculum of Course Outcome 4 (CO4) for CSA0606. Emphasizing design-before-implementation, all solutions follow the canonical progression:
+$$\text{Interpret} \longrightarrow \text{Identify Decision/State} \longrightarrow \text{Design Logic} \longrightarrow \text{Write Pseudocode} \longrightarrow \text{Trace} \longrightarrow \text{Challenge} \longrightarrow \text{Refine}$$
+
+Across six extensive tasks, this submission provides:
+1. **Defect Diagnosis:** Isolating five fatal deficiencies in an informal vehicle-loading algorithm and engineering a robust fractional greedy design.
+2. **Greedy Scheduling:** Transforming a cloud revenue model with deadlines into an optimal slot-allocation strategy with complete step-by-step desk checks.
+3. **Dynamic Programming Synthesis:** Deriving the optimal substructure recurrence for 0/1 knapsack, designing a 2D bottom-up tabular solver, and proving backtrack reconstruction correctness.
+4. **Algorithmic Forensics:** Diagnosing a critical subproblem independence flaw in a dynamic programming string segmenter (`WordBreak`) and applying minimal repair logic.
+5. **Graph Transition Under Stress:** Demonstrating how negative edge insertions destroy Dijkstra's greedy invariant, formulating Bellman-Ford cycle detection, and specifying Floyd-Warshall all-pairs transitions.
+6. **Energy-Aware Design Challenge:** Solving an unguided cloud data center energy-saving challenge via Weighted Interval Scheduling ($O(n \log n)$) and validating resilience against adversarial inputs.
+
+---
+
+## 2. Problem Statement & Algorithmic Progression
+
+Modern cloud and logistics platforms demand algorithms capable of provable correctness and efficiency under hard physical constraints (deadlines, non-overlapping servers, carrying capacities, and network topologies). Rather than ad-hoc programming, this assignment enforces structured pseudocode conforming to the **SIMATS Engineering Handbook for Algorithmic Pseudocode**.
+
+---
+
+## 3. SIMATS Engineering Pseudocode Standards
+
+All pseudocode adheres to the following engineering conventions:
+- **Strict Typing & Signatures:** Explicit `INPUT`, `OUTPUT`, and preconditions.
+- **Forbidden Colloquialisms:** Elimination of ambiguous statements such as *"choose best item"* or *"process appropriately"*.
+- **Standard Control Structures:** Capitalized keywords (`FOR`, `WHILE`, `IF ... THEN ... ELSE`, `RETURN`).
+- **Mathematical Integrity:** Explicit indexing, bounds, and deterministic state updates.
+
+---
+
+## 4. Complete Task Solutions & Forensic Analyses
+
 
 ---
 
@@ -499,3 +573,37 @@ Dataset provided in assessment:
   $OPT$ for B-chain accumulates: $40 + 40 + 40 + 40 = 160 > 100$.
   The algorithm evaluates $\max(OPT[B_4] + v(A1), \dots)$ and selects the $\{B_1, B_2, B_3, B_4\}$ set, correctly yielding 160. The adversarial attack fails to defeat the algorithm because DP systematically explores the inclusion/exclusion state-space.
 
+---
+
+## 5. Comparative Analysis of Greedy vs Dynamic Programming
+
+| Architectural Dimension | Greedy Strategy | Dynamic Programming |
+|---|---|---|
+| **Fundamental Invariant** | Makes locally optimal choice at each step; never reconsiders previous choices. | Explores all feasible subproblems; combines optimal solutions of overlapping subproblems. |
+| **Prerequisite Property** | **Greedy-Choice Property** + Optimal Substructure. | **Overlapping Subproblems** + Optimal Substructure. |
+| **State Tracking** | Single accumulator variable; $O(1)$ state. | Multi-dimensional memoization table; $O(n \cdot W)$ or $O(n^2)$ state. |
+| **Computational Cost** | Typically $O(n \log n)$ due to initial sorting. | Pseudo-polynomial or polynomial ($O(n \cdot W)$, $O(n^3)$). |
+| **Optimality Failure Mode** | Fails when local choices lock out superior global combinations (e.g., 0/1 Knapsack). | Guaranteed optimal; failure occurs only if recurrence or base state is malformed. |
+
+---
+
+## 6. Adversarial Testing & Boundary Verification
+
+1. **Fractional Knapsack (Task 1):** Validated on capacity exhaustion where remaining capacity is strictly smaller than package weight. Fractional split rule correctly divides package without precision overflow.
+2. **Job Scheduling (Task 2):** Tested against tightly nested deadlines where earlier tasks contend for slot 1. Reverse-deadline scan successfully preserves free slots for preceding tasks.
+3. **WordBreak Forensics (Task 4):** Adversarial string `"catsandog"` with dictionary `{"cats", "dog", "sand", "and", "cat"}` completely exposed the flawed algorithm, while the repaired algorithm returned `FALSE` correctly.
+4. **Energy Scheduling (Task 6):** An adversarial job with value 100 spanning the entire window was defeated by a chain of four 40-value non-overlapping jobs (Total = 160), proving that DP systematically explores optimal combinations.
+
+---
+
+## 7. Conclusion & Technical Reflection
+
+Algorithmic design through rigorous pseudocode serves as the critical bridge between abstract problem specifications and robust software implementations. By diagnosing flaws, formalizing recurrences, and proving invariants before writing code, engineers avoid catastrophic defects in production systems.
+
+---
+
+## 8. References
+
+1. Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to Algorithms* (4th ed.). MIT Press.
+2. Kleinberg, J., & Tardos, É. (2006). *Algorithm Design*. Pearson.
+3. SIMATS Engineering. *Handbook for Algorithmic Pseudocode and Design Standards*.
