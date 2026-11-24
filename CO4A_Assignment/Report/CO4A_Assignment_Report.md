@@ -15,9 +15,9 @@
 **Assessment:** Assignment 4A — Course Outcome 4 (CO4 - Part I)  
 **Maximum Marks:** 50  
 **Mode:** Individual Technical Assignment  
-**Student Name:** Mallapu Vidyadhar  
-**Registration Number:** 192511467  
-**Academic Year:** 2024–2025 (Third Year / B.E. CSE)  
+**Student Name:** ch.jhansi 
+**Registration Number:** 192472068
+**Academic Year:** 2024–2028 (Third Year / B.E. CSE)  
 **Standard Followed:** SIMATS Engineering — Handbook for Algorithmic Pseudocode  
 **Source Document:** [Original Assessment Guidelines](Report/Reference/MALLAPU%20VIDYADHAR%20-%20CO4A%20ASSIGNMENT.pdf)
 

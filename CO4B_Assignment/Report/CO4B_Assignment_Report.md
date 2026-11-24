@@ -15,9 +15,9 @@
 **Assessment:** Assignment 4B — Course Outcome 4 (CO4 - Part II)  
 **Maximum Marks:** 50  
 **Mode:** Individual Technical Assignment  
-**Student Name:** Mallapu Vidyadhar  
-**Registration Number:** 192511467  
-**Academic Year:** 2024–2025 (Third Year / B.E. CSE)  
+**Student Name:** ch.jhansi 
+**Registration Number:** 192472068
+**Academic Year:** 2024–2028  
 **Source Document:** [Original Assessment Guidelines](Report/Reference/MALLAPU%20VIDYADHAR%20-%20CO4B%20ASSIGNMENTS.pdf)
 
 </div>

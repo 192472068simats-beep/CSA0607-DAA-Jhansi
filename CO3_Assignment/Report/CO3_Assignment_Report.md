@@ -15,9 +15,9 @@
 **Assessment:** Assignment 3 — Course Outcome 3 (CO3)  
 **Maximum Marks:** 50  
 **Mode:** Pair Work (2 Students per Group)  
-**Student A (Primary):** Mallapu Vidyadhar (Reg No: 192511467)  
-**Student B (Primary):** Shaik Mohammad Sohan (Reg No: 192511489)  
-**Academic Year:** 2024–2025 (Third Year / B.E. CSE)  
+**Student A (Primary):** ch.jhansi (Reg No: 192472068)  
+**Student B (Primary):** HASINI (Reg No: 192511489)  
+**Academic Year:** 2024–2028  
 **Source Document:** [Original Assessment Guidelines](Report/Reference/MALLAPU%20VIDYADHAR%20-%20CO3%20ASSIGNMENT.pdf)
 
 </div>

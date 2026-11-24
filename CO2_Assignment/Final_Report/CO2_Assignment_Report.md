@@ -12,9 +12,9 @@ Sorting, Sequential Search, String Matching, Closest Pair, Convex Hull, and Exac
 | --- | --- |
 | Course Outcome (CO) | CO2 — Analyze and Design Brute-Force and Exhaustive Search Algorithms |
 | Assessment Type | Individual Algorithm Engineering Assignment |
-| Student Name | MALLAPU VIDYADHAR |
-| Registration Number | 192511467 |
-| Academic Year | 2024–2025 (Third Year / B.E. CSE) |
+| Student Name | ch.jhansi |
+| Registration Number | 192472068 |
+| Academic Year | 2024–2028 (Third Year / B.E. CSE) |
 | Date of Submission | November 2026 |
 | Maximum Marks | 50 Marks |
 
